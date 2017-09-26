@@ -1,11 +1,15 @@
-ZfSnapPhpDebugBar [![Build Status](https://travis-ci.org/snapshotpl/ZfSnapPhpDebugBar.svg?branch=master)](https://travis-ci.org/snapshotpl/ZfSnapPhpDebugBar)
-=================
+zf-php-debug-bar 
+================
+
+[![Build Status](https://travis-ci.org/snapshotpl/ZfSnapPhpDebugBar.svg?branch=master)](https://travis-ci.org/snapshotpl/ZfSnapPhpDebugBar)
 
 PHP Debug Bar module for Zend Framework 2 & 3
 
-Created by Witold Wasiczko
+Created by Witold Wasiczko and another developers.
 
 ![PHP Debug Bar Messages](docs/img/demo.gif)
+
+This package is fork of [snapshotpl/ZfSnapPhpDebugBar](https://github.com/snapshotpl/ZfSnapPhpDebugBar).
 
 Features
 --------
@@ -33,7 +37,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```bash
-php composer require --dev snapshotpl/zf-snap-php-debug-bar
+php composer require --dev snapshotpl/zf-php-debug-bar
 ```
 
 Usage
