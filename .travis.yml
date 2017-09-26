@@ -1,24 +1,13 @@
 language: php
-
 dist: trusty
-
 php:
   - 5.5
   - 5.6
-  - 7
+  - 7.1
+  - 7.2
   - hhvm
-
-env:
-  - DEPS=lowest
-  - DEPS=latest
-
 before_script:
-  - composer self-update
-  - if [[ $DEPS == 'lowest' ]]; then travis_retry composer update --prefer-lowest --prefer-stable --no-interaction ; fi
-  - travis_retry composer install --no-interaction
+  - composer install --no-interaction
+after_script:
+  - vendor/bin/coveralls -v
 
-script:
-  - composer test
-
-matrix:
-  fast_finish: true

@@ -1,4 +1,7 @@
-composer.lock
-tests/assets/local.config.php
-vendor/
-build/
+/composer.lock
+/tests/assets/local.config.php
+/vendor
+/build
+.DS_Store
+*.swp
+
