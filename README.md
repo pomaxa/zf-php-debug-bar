@@ -1,7 +1,11 @@
 zf-php-debug-bar 
 ================
 
-[![Build Status](https://travis-ci.org/snapshotpl/ZfSnapPhpDebugBar.svg?branch=master)](https://travis-ci.org/snapshotpl/ZfSnapPhpDebugBar)
+[![Latest Stable Version](https://poser.pugx.org/bupy7/zf-php-debug-bar/v/stable)](https://packagist.org/packages/bupy7/zf-php-debug-bar)
+[![Total Downloads](https://poser.pugx.org/bupy7/zf-php-debug-bar/downloads)](https://packagist.org/packages/bupy7/zf-php-debug-bar)
+[![License](https://poser.pugx.org/bupy7/zf-php-debug-bar/license)](https://packagist.org/packages/bupy7/zf-php-debug-bar)
+[![Coverage Status](https://coveralls.io/repos/github/bupy7/zf-php-debug-bar/badge.svg?branch=master)](https://coveralls.io/github/bupy7/zf-php-debug-bar?branch=master)
+[![Build Status](https://travis-ci.org/bupy7/zf-php-debug-bar.svg?branch=master)](https://travis-ci.org/bupy7/zf-php-debug-bar)
 
 PHP Debug Bar module for Zend Framework 2 & 3
 
