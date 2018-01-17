@@ -38,8 +38,12 @@ class RenderOnShutdownListener extends AbstractListenerAggregate
             return;
         }
         $contentTypeHeader = $response->getHeaders()->get('Content-type');
-
-        if ($contentTypeHeader && $contentTypeHeader->getFieldValue() !== 'text/html') {
+        
+        if (
+            $contentTypeHeader
+            // compatibility with middleware Content-type
+            && stripos($contentTypeHeader->getFieldValue(), 'text/html') !== 0
+        ) {
             return;
         }
 
