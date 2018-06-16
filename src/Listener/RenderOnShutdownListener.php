@@ -13,8 +13,13 @@ use Zend\Mvc\MvcEvent;
  */
 class RenderOnShutdownListener extends AbstractListenerAggregate
 {
-
+    /**
+     * @var JavascriptRenderer
+     */
     private $javascriptRenderer;
+    /**
+     * @var bool
+     */
     private $enable;
 
     public function __construct(JavascriptRenderer $javascriptRenderer, $enable)
@@ -48,5 +53,15 @@ class RenderOnShutdownListener extends AbstractListenerAggregate
         }
 
         $this->javascriptRenderer->renderOnShutdown(false);
+    }
+
+    /**
+     * @param bool $enable
+     * @return static
+     */
+    public function setEnable($enable)
+    {
+        $this->enable = $enable;
+        return $this;
     }
 }

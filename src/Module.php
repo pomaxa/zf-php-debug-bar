@@ -59,9 +59,10 @@ final class Module implements ConfigProviderInterface, Bootstrap
         $timeCollector = $debugbar['time'];
         $exceptionsCollector = $debugbar['exceptions'];
         self::$messageCollector = $debugbar['messages'];
-        $rendedOnShutdown = $debugbarConfig['render-on-shutdown'];
 
-        (new RenderOnShutdownListener($debugbar->getJavascriptRenderer(), $rendedOnShutdown))->attach($applicationEventManager);
+        /** @var RenderOnShutdownListener $renderOnShutdownListener */
+        $renderOnShutdownListener = $serviceManager->get(RenderOnShutdownListener::class);
+        $renderOnShutdownListener->attach($applicationEventManager);
 
         // Auto enable assets
         if ($debugbarConfig['auto-append-assets']) {

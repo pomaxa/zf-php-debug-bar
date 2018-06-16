@@ -29,6 +29,8 @@ return [
             'debugbar' => ZfSnapPhpDebugBar\Service\PhpDebugBarFactory::class,
             ZfSnapPhpDebugBar\Log\Writer\PhpDebugBar::class => ZfSnapPhpDebugBar\Log\Writer\PhpDebugBarFactory::class,
             DebugBar\Bridge\DoctrineCollector::class => ZfSnapPhpDebugBar\Collector\DoctrineCollectorFactory::class,
+            ZfSnapPhpDebugBar\Listener\RenderOnShutdownListener::class
+                => ZfSnapPhpDebugBar\Listener\RenderOnShutdownListenerFactory::class
         ],
         'delegators' => [
             // uncomment if you use Doctrine ORM
