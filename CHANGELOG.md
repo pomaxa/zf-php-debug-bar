@@ -1,6 +1,11 @@
 zf-php-debug-bar
 ================
 
+1.0.1 [2018-06-16]
+------------------
+
+- Enh: Added ability to create `ZfSnapPhpDebugBar\Listener\RenderOnShutdownListener` through ServiceManager.
+
 1.0.0 [2018-01-17]
 ------------------
 
