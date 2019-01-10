@@ -69,8 +69,11 @@ class DebugBar extends AbstractHelper
     /**
      * @return string
      */
-    public function render()
+    public function render($noConflict = true)
     {
+        if($noConflict) {
+            $this->renderer::setEnableJqueryNoConflict()
+        }
         return $this->renderer->render();
     }
 
